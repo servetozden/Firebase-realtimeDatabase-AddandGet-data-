@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="First Name: "/>
+
+        <TextView
+            android:id="@+id/textViewNameInput"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text=" Servet "/>
+
+
+        <TextView
+            android:id="@+id/textViewSurname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="Surname: "/>
+
+        <TextView
+            android:id="@+id/textViewSurnameInput"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName"
+            app:layout_constraintLeft_toRightOf="@+id/textViewSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text=" Ozden "/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
